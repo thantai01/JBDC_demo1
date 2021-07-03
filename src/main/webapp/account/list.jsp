@@ -17,10 +17,11 @@
 </head>
 <body>
     <div class="container">
-        <div class="row" style="height: 5%"></div><hr>
+        <div class="row mt-3">
+            <a href="${pageContext.request.contextPath}/list?action=create">Let's Sign Up For Now!!</a>
+        </div><hr>
         <div class="row mt-3">
             <form>
-
                 <label>User Name
                     <input type="text" name="userID">
                 </label>
@@ -40,7 +41,7 @@
                 </tr>
                 <c:forEach var="account" items="${requestScope['accounts']}">
                     <tr>
-                        <td><c:out value="${account.userID}"> </c:out></td>
+                        <td><a href="<c:url value="/list?action=view&userName=${account.userID}"/>">${account.userID}</a></td>
                         <td><c:out value="${account.userPassword}"> </c:out></td>
                         <td>
                             <a class="btn btn-primary" style="background-color: #3b5998;" href="#" role="button">Edit</a>
