@@ -14,7 +14,7 @@
 <body>
 <div class="container">
     <div class="row"> </div>
-    <div class="row"> <a href="${pageContext.request.contextPath}/list">Back to account list</a> </div>
+    <div class="row"> <a href="${pageContext.request.contextPath}/accountList">Back to account list</a></div>
     <div class="row">
     <div class="container">
         <table class="table table-bordered">

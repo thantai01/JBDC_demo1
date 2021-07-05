@@ -1,12 +1,14 @@
 service/ManagerService.java
  service.ManagerService
-dao/AccountDAO.java
- dao.AccountDAO
-service/AccountManager.java
- service.AccountManager
-dao/DatabaseAccessObject.java
- dao.DatabaseAccessObject
 model/Account.java
  model.Account
+service/AccountManager.java
+ service.AccountManager
+dao/MySQLConnection.java
+ dao.MySQLConnection
+dao/DatabaseAccessObject.java
+ dao.DatabaseAccessObject
+dao/AccountDAO.java
+ dao.AccountDAO
 controller/AccountController.java
  controller.AccountController

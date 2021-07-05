@@ -58,27 +58,13 @@
             </div>
             <!-- Submit button -->
             <button type="submit" class="btn btn-primary btn-block mb-4" style="width: 150px">Sign up</button>
-
-<%--            <!-- Register buttons -->--%>
-<%--            <div class="text-center">--%>
-<%--                <p>or sign up with:</p>--%>
-<%--                <button type="button" class="btn btn-primary btn-floating mx-1">--%>
-<%--                    <i class="fab fa-facebook-f"></i>--%>
-<%--                </button>--%>
-
-<%--                <button type="button" class="btn btn-primary btn-floating mx-1">--%>
-<%--                    <i class="fab fa-google"></i>--%>
-<%--                </button>--%>
-
-<%--                <button type="button" class="btn btn-primary btn-floating mx-1">--%>
-<%--                    <i class="fab fa-twitter"></i>--%>
-<%--                </button>--%>
-
-<%--                <button type="button" class="btn btn-primary btn-floating mx-1">--%>
-<%--                    <i class="fab fa-github"></i>--%>
-<%--                </button>--%>
-<%--            </div>--%>
-<%--        </form>--%>
+        </form>
+        <div class="row"> <a href="${pageContext.request.contextPath}/accountList">Back to account list</a> </div>
+        <div class="row"> <p>
+            <c:if test='${requestScope["message"] != null}'>
+                <span class="message">${requestScope["message"]}</span>
+            </c:if>
+        </p></div>
     </div>
 </div>
 </body>
